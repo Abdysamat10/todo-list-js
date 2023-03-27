@@ -57,5 +57,5 @@ function changeColor() {
     if (changeColors >= colors.length) changeColors = 0;
 }
 
-setInterval(changeColor, 10);
+setInterval(changeColor, 500);
 
