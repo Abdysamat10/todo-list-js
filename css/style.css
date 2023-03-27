@@ -1,0 +1,130 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #004e98;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+li {
+	list-style: none;
+}
+main {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.title {
+	font-size: 42px;
+	text-align: center;
+}
+#form {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+#input {
+	background-color: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	padding: 7px 10px;
+	outline: none;
+	color: #fff;
+	font-size: 16px;
+}
+#input::placeholder {
+	color: rgba(255, 255, 255, 0.5);
+}
+button[type="submit"] {
+	background-color: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	border-radius: 10px;
+	transition: .5s;
+	padding: 7px 30px;
+	font-size: 16px;
+}
+button[type="submit"]:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	background-color: #fff;
+	color: #004e98;
+}
+#list {
+	padding: 0;
+}
+h2 {
+	font-size: 32px;
+	font-weight: 500;
+}
+.todo > div {
+	margin-bottom: 30px;
+}
+.todo-name {
+	position: relative;
+	font-size: 24px;
+	font-weight: 400;
+	margin-right: 20px;
+	margin-left: 100px;
+	margin-bottom: 60px;
+
+}
+.todo-name::after {
+	content: '';
+	height: 4px;
+	width: 90px;	
+	background-color: #ff0054;
+	position: absolute;
+	top: 8px;
+	left: -100px;
+}
+.todo-name::before {
+	content: '';
+	height: 4px;
+	width: 45px;	
+	background-color: #70e000;
+	position: absolute;
+	top: 18px;
+	left: -55px;
+}
+.delete-btn {
+	background-color: #ff0054;
+	border: 3px solid #ff0054;
+	border-radius: 10px;
+	outline: none;
+	padding: 7px 30px;
+	font-size: 16px;
+	font-weight: 600;
+	margin-right: 20px;
+	color: #fff;
+	transition: .5s;
+}
+.delete-btn:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	border: 3px solid #ff0054;	
+	color: #ff0054;
+	background-color: #fff;
+}
+.edit-btn {
+	background-color: #70e000;
+	border: 3px solid #70e000;	
+	border-radius: 10px;
+	outline: none;
+	padding: 7px 30px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	transition: .5s;
+}
+.edit-btn:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	border: 3px solid #70e000;	
+	color: #70e000;
+	background-color: #fff;
+}
+.icon {
+	margin-left: 3px;
+}
