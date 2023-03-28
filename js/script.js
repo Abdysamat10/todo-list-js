@@ -41,21 +41,5 @@ function onFormSubmit(event) {
     }
 }
 
-let colors = [
-    'linear-gradient(90deg, #032e42,#045b64,#de8d56,#f5a815)',
-    'linear-gradient(90deg, #282f33,#62765b,#b98b41,#b03eee,#523caa)',
-    'linear-gradient(90deg, #282f33,#62765b,#b98b41,#b03eee,#523caa)',
-    'linear-gradient(90deg, #1e00ff,#24bdff,#ffffff,#ff7b00,#ff0000)',
-    'linear-gradient(90deg, #fefec0,#f68dae,#dac2f2)',
-];
-let background = document.querySelector('body');
-let changeColors = 0;
 
-function changeColor() {
-    background.style.background = colors[changeColors];
-    changeColors++;
-    if (changeColors >= colors.length) changeColors = 0;
-}
-
-setInterval(changeColor, 500);
 

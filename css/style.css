@@ -1,19 +1,40 @@
 * {
 	box-sizing: border-box;
 }
-html {
-	height: 100%;
-	transition: .5s;
-}
+
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #004e98;
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
 	transition: .5s;
 	width: 100%;
 	height: 100%;
+	animation-name: color-change; /* Название ключевых кадров */
+	animation-duration: 5s; /* Длительность анимации */
+	animation-iteration-count: infinite; /* Количество повторений (в данном случае бесконечность) */
+	animation-direction: alternate;
+	animation-timing-function: ease;
+}
+@keyframes color-change {
+	0% {	
+		background-color: #00b4d8;
+	}
+	20% {	
+		background-color: #0096c7;
+	}
+	40% {	
+		background-color: #0077b6;
+	}
+	60% {	
+		background-color: #023e8a;
+	}
+	80% {	
+		background-color: #03045e;
+	}
+	100% {	
+		background-color: #00b4d8;
+	}
 }
 li {
 	list-style: none;
